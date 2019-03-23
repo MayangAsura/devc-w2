@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .bg-aqua {background: aqua}
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Bismillah. Javascript</h1>
+    <input id="name" type="text" />
+    <button id="enter" onclick="alert(document.getElementById('name').value)">
+        Masukkan nama kalian
+    </button>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="coll bg-aqua"></div>
+        </div>
+    </div>
+
+    <script>
+        /*var x=10
+        var name='mayang'
+        var male=true
+    
+        console.log(x)
+        console.log(name)
+        console.log(male) */
+        var title = document.getElementById("title")
+        console.log(title)
+        title.innerHTML = 'cHacktive'
+        var input = document.getElementById("name")
+        input.value = 'Facebook Dev Cricle'
+
+        var isSaturday = true
+        var time = 22
+        // && , semua kondisi haarus benar
+        // ||, salah satu kondisi harus benar
+        if (isSaturday || time == 9) {
+            console.log('Belajar Javascript')
+        }else if(isSaturday && time == 20){
+            console.log('Jalan-Jalan')
+        } else {
+            console.log('murojaah.. insyaaAllah :)')
+        }
+
+        //Pelajaran LOOOOOOOPING
+        var stop=true
+        while(stop){
+            console.log('laaaa')
+            stop=false
+        }
+        // var number=1
+        // while(number<= 10){
+        //     console.log('laaoooo ' + number)
+        //     number++
+        // }
+
+        for (var number=10; number>=0; number-=2){
+            console.log('laaoooo ' + number)
+        }
+        console.log("looping selesai")
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

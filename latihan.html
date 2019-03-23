@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>LATIHAN-KALKULATOR
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .bg-pink {
+            background: pink;
+        }
+
+        .bg-aqua {
+            background: aqua;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col bg-pink">
+                    <input id="input" type="text" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-pink">
+                <button id="bt7" value="7" onclick="kirimNilai(document.getElementById('bt7').value)">7</button>
+                <!-- <button id="bt7" value="7" onclick="console.log(document.getElementById('bt7').value)">7</button> -->
+            </div>
+            <div class="col bg-aqua">
+                <button id="bt8" value="8" onclick="kirimNilai(document.getElementById('bt8').value)">8</button>
+            </div>
+            <div class="col bg-pink">
+                <button id="bt9" value="9" onclick="kirimNilai(document.getElementById('bt9').value)">9</button>
+            </div>
+            <div class="col bg-aqua">
+                <button id="btX" onclick="">X</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col bg-aqua">
+                <button id="bt4" onclick="">4</button>
+            </div>
+            <div class="col bg-pink">
+                <button id="bt5" onclick="">5</button>
+            </div>
+            <div class="col bg-aqua">
+                <button id="bt6" onclick="">6</button>
+            </div>
+            <div class="col bg-pink">
+                <button id="bt-" onclick="">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-pink">
+                <button id="bt7" onclick="">1</button>
+            </div>
+            <div class="col bg-aqua">
+                <button id="bt7" onclick="">2</button>
+            </div>
+            <div class="col bg-pink">
+                <button id="bt7" onclick="">3</button>
+            </div>
+            <div class="col bg-aqua">
+                <button id="bt7" onclick="">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col bg-aqua">
+                <button id="bt+-" onclick="">+-</button>
+            </div>
+            <div class="col bg-pink">
+                <button id="bt0" onclick="">0</button>
+            </div>
+            <div class="col bg-aqua">
+                <button id="bt." onclick="">.</button>
+            </div>
+            <div class="col bg-pink">
+                <button id="bt=" onclick="">=</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script>
+    var bt0 = document.getElementById("bt0")
+    var bt1 = document.getElementById("bt1")
+    var bt2 = document.getElementById("bt2")
+    var bt3 = document.getElementById("bt3")
+    var bt4 = document.getElementById("bt4")
+    var bt5 = document.getElementById("bt5")
+    var bt6 = document.getElementById("bt6")
+    var bt7 = document.getElementById("bt7")
+    var bt8 = document.getElementById("bt8")
+    var bt9 = document.getElementById("bt9")
+    var angka1
+    var angka2
+    var operator
+    function kirimNilai(angka){
+        document.getElementById('input').value = angka
+        angka1=angka
+        if(operator==null){
+            angka1=angka
+        }
+        else{
+            angka2=angka
+        }
+    }
+    function name(params) {
+        
+    }
+
+</script>
+
+</html>
